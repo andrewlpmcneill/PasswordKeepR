@@ -1,0 +1,30 @@
+﻿USER STORIES
+
+
+1. As an organization, I want to view all our passwords, because we have multiple accounts with passwords
+  GET /passwords
+2. As an organization, I want only authorized members to have access
+  GET /login
+  POST /login
+3.  As an organization, I want to be able to add authorized members to our organization and see all members
+  GET /organizations/users/new
+  POST /organizations/users/
+  GET /organizations/users
+4. As a user, I want to be able to create a personal account that is linked to an organization
+  GET /register/
+  POST /register
+5. As a user, I want to be able to add and/or generate passwords and assign a category for my organization
+  GET /passwords/new
+  POST /passwords
+6. As a user, I want to be able to edit/delete passwords for my organization
+  GET /passwords/:id
+  POST /passwords/:id
+7. As a user, I want to be able to view all categories
+  GET /categories
+8. As a user, I want to be able to edit/delete categories
+  GET /categories/:id
+  POST /categories/:id
+9. As a user, I want to be able to create categories for my passwords
+  GET /categories/new
+  POST /categories/:id
+10. As a user, I want to copy a password to my clipboard in one click
